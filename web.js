@@ -4,14 +4,15 @@ app.use(express.logger());
 
 // Read in the contents of the html file.
 // The function fs.readFile returns a buffer unless an encoding is specified.
-var buf = fs.readFileSync('index.html');
+//var buf = fs.readFileSync('index.html');
+var text = fs.readFileSync('index.html','utf8')
 
 //
 // Convert that buffer to a string.
-var string = buf.toString();
+//var text = buf.toString();
 
 app.get('/', function(request, response) {
-  response.send(string);
+  response.send(text);
 });
 
 var port = process.env.PORT || 5000;
