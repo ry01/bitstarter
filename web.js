@@ -13,7 +13,8 @@ var text = fs.readFileSync('index.html','utf8')
 //var text = buf.toString();
 
 app.get('/', function(request, response) {
-  response.send('Hi Me!');
+//  response.send('Hi Me!');
+  response.send(text);
 });
 
 var port = process.env.PORT || 5000;
