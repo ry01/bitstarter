@@ -5,7 +5,7 @@ app.use(express.logger());
 // Read in the contents of the html file.
 // The function fs.readFile returns a buffer unless an encoding is specified.
 //var buf = fs.readFileSync('index.html');
-var text = fs.readFileSync('index.html','utf8')
+//var text = fs.readFileSync('index.html','utf8')
 
 //
 // Convert that buffer to a string.
